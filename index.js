@@ -73,13 +73,13 @@ const greatestSum = x => {
 
 const checkMagazine = (magazine, note) => {
 
-    // iterate through first array
+    // iterate through magazine array
     for (let i = 0; i < magazine.length; i++) {
 
-        // iterate first word from first array through second array's words
+        // iterate first word from magazine array through note array's words
         for (let l = 0; l < note.length; l++) {
 
-            // if word from magazine matches word from note, delete word from second array and break loop
+            // if word from magazine matches word from note, delete word from note array and break loop
             if (magazine[i] == note[l]) {
 
                 let word = note[l];

@@ -73,10 +73,13 @@ const greatestSum = x => {
 
 const checkMagazine = (magazine, note) => {
 
+    // iterate through first array
     for (let i = 0; i < magazine.length; i++) {
 
+        // iterate first word from first array through second array's words
         for (let l = 0; l < note.length; l++) {
 
+            // if word from magazine matches word from note, delete word from second array and break loop
             if (magazine[i] == note[l]) {
 
                 let word = note[l];
@@ -92,6 +95,7 @@ const checkMagazine = (magazine, note) => {
         }
     }
 
+    // if note array is empty, return yes. otherwise, return no
     if (note.length == 0) {
         console.log('Yes');
     } else {
@@ -101,9 +105,13 @@ const checkMagazine = (magazine, note) => {
 
 // hacker rank left side rotation
 
+
 function rotLeft(a, d) {
 
+    // apply function d number of times
     for (var i = 0; i < d; i++) {
+
+            // push first element, then delete first element
             a.push(a[0]);
             a.shift();
         }
